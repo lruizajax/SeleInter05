@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/",
         glue = "com.magento", // recordar el path de hooks
-        plugin = {"pretty", "summary",
+        plugin = {"summary","pretty",
                 "html:target/cucumber",
                 "json:target/cucumber.json",
                 "junit:target/cucumber.xml",
